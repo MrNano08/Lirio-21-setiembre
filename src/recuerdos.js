@@ -1,0 +1,15 @@
+// EDITA SOLO ESTE ARCHIVO para personalizar las seis tarjetas.
+// Coloca tus fotos en public/fotos (por ejemplo, public/fotos/foto-1.jpg).
+// En `foto` escribe 'fotos/foto-1.jpg'. No escribas 'public/'.
+// Si dejas foto: '', se muestra un espacio reservado, sin errores.
+// Usa comillas invertidas (`) en texto para escribir varios párrafos.
+// Mantén los seis objetos y sus IDs del 1 al 6.
+
+export const recuerdos = [
+  { id: 1, titulo: 'Ola', foto: '/src/Assets/memories/IMG_20250504_111126.jpg', alt: 'Foto random', texto: `ola, no sé muy bien cómo empezar esto jajaja, pero quería darte algo hoy. Como no puedo estar contigo, se me ocurrió hacerte esto. Tal vez no sea mucho, pero lo hice con mucho amor. Quería que cada parte guardara un poquito de nosotros y de todo lo que hemos vivido juntos.` },
+  { id: 2, titulo: 'Gracias', foto: '/src/Assets/memories/IMG_20250403_211641.jpg', alt: 'Besito en el puntazo jajaja', texto: `Quiero agradecerte por estar conmigo y por hacerme tan feliz. Gracias por quedarte, no solamente cuando todo está bien, sino también en los momentos difíciles, cuando las cosas no salen como queremos o cuando simplemente no estoy en mi mejor momento. De verdad valoro muchísimo tenerte a mi lado.` },
+  { id: 3, titulo: 'Por nuestras pequeñas y grandes aventuras juntos', foto: '/src/Assets/memories/IMG_20250714_110942.jpg', alt: 'Foto en Puerto Viejo', texto: `También quiero agradecerte por todos los lugares que he podido conocer contigo. Muchos de mis recuerdos más felices son de algún viaje o simplemente algún lugar al que fuimos juntos. Me encanta poder conocer lugares nuevos contigo y que cada salida termine convirtiéndose en  recuerdo especial.` },
+  { id: 4, titulo: '¡Bubble Tea! jajaja', foto: '/src/Assets/memories/IMG_20250217_170945.jpg', alt: '!BUBBLE TEA¡', texto: `Estoy muy feliz por todas las cosas nuevas que he podido probar contigo. Algunas eran completamente nuevas para mí y otras fueron nuevas para los dos, pero eso es justamente lo bonito. Me gusta que podamos descubrir cosas juntos, probar algo aunque no sepamos si nos va a gustar y después terminar teniendo recuerdo a tu lado.` },
+  { id: 5, titulo: 'Wazaaaa', foto: '/src/Assets/memories/IMG_20250709_151824.jpg', alt: 'mmm carita', texto: `Gracias también por aguantar todas mis loqueras jajaja, más las que probablemente no tienen ningún sentido. Me encanta cuando me sigues el juego o cuando simplemente te ríes conmigo. Verte sonreír me hace demasiado feliz, y saber que a veces puedo ser yo quien provoque esa sonrisa hace que me guste todavía más.` },
+  { id: 6, titulo: 'Por más tiempo juntos', foto: '/src/Assets/memories/IMG_20260108_114557.jpg', alt: 'Mi vida', texto: `Y por último, espero que esto sea solamente una pequeña parte de todo lo que todavía nos falta vivir. Quiero seguir probando cosas nuevas contigo, conocer lugares, descubrir otros, reírnos de más tonteras, crear recuerdos y seguir creciendo juntos. Espero que con el tiempo podamos mirar hacia atrás y ver todo lo que construimos, y seguir construyendo nuestro futuro juntos. Te amo mucho mi vida. ❤️` },
+]

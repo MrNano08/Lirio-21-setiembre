@@ -1,0 +1,8 @@
+Coloca tus seis fotos en esta carpeta.
+
+Ejemplo: foto-1.jpg, foto-2.jpg, foto-3.jpg, etc.
+Luego abre src/recuerdos.js y cambia foto: '' por foto: 'fotos/foto-1.jpg'.
+Cada tarjeta permite su propio título, texto y descripción de imagen (alt).
+Recomendado: JPG o WebP de hasta 1600 px de ancho. No es obligatorio.
+La foto se muestra completa, sin recortarla.
+No necesitas compartir tus fotos con nadie para probarlas localmente.
