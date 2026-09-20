@@ -8,7 +8,11 @@ import './styles.css'
 function Star({className=''}){return <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 1C13 8.5 15.5 11 23 12C15.5 13 13 15.5 12 23C11 15.5 8.5 13 1 12C8.5 11 11 8.5 12 1Z" fill="currentColor"/></svg>}
 function Photo({memory}){
   const [failed,setFailed]=useState(false)
-  const source=memory.foto?`${import.meta.env.BASE_URL}${memory.foto.replace(/^\//,'')}`:''
+  const source = memory.foto
+  ? /^https?:\/\//i.test(memory.foto)
+    ? memory.foto
+    : `${import.meta.env.BASE_URL}${memory.foto.replace(/^\//, '')}`
+  : ''
   if(source&&!failed)return <img className="memory-photo" src={source} alt={memory.alt||memory.titulo} onError={()=>setFailed(true)}/>
   return <div className="photo-placeholder"><div className="placeholder-halo"/><Star/><svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="4" stroke="currentColor"/><circle cx="30" cy="18" r="4" stroke="currentColor"/><path d="M8 34L19 23L29 34L35 28L41 34" stroke="currentColor"/></svg><span>{failed?'No se pudo cargar la foto':'Aquí florecerá tu foto'}</span><small>{failed?'Revisa la ruta en src/recuerdos.js':'Un espacio reservado para ti'}</small></div>
 }
